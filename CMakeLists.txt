@@ -13,7 +13,7 @@ cpp_find_or_build_dependency(
 cpp_add_library(
     CMaizePublicDepend
     SOURCE_DIR "${CMAKE_CURRENT_LIST_DIR}"
-    INCLUDE_DIR "${CMAKE_CURRENT_LIST_DIR}"
+    INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}"
     DEPENDS CMakePublic
 )
 
