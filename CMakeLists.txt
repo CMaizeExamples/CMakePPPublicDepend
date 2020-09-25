@@ -42,8 +42,11 @@ cpp_add_library(
 #)
 
 target_include_directories (${PROJECT_NAME} PUBLIC 
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+    $<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}>
 )
+
+#target_include_directories (CMakePublic PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+#target_include_directories (${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 install(TARGETS ${PROJECT_NAME}
     EXPORT ${PROJECT_NAME}-targets
